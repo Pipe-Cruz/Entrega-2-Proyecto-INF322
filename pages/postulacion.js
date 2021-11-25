@@ -9,6 +9,18 @@ import { Stack } from "@chakra-ui/react"
 import { useRouter } from 'next/router'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import { Select } from "@chakra-ui/react"
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuIcon,
+  MenuCommand,
+  MenuDivider,
+} from "@chakra-ui/react"
 
 export default function Home() {
     const router = useRouter()
@@ -76,11 +88,18 @@ export default function Home() {
                 </Select>
 
                 <Text fontSize="2xl">Carrera:</Text>
-                <Select bg="white" borderColor="white" color="black">
-                  <option value="option1">Ingeniería Civil Informática</option>
-                  <option value="option2">Ingeniería Civil Electrónica</option>
-                  <option value="option3">Ingeniería Civil</option>
-                </Select>  
+                <Menu closeOnSelect={false}>
+  <MenuButton as={Button} color="black" colorScheme="black" bg="white">
+    Seleccionar carreras
+  </MenuButton>
+  <MenuList minWidth="240px" color="black">
+    <MenuOptionGroup  color="black" title="Carreras" type="checkbox">
+      <MenuItemOption color="black" value="option1">Ingeniería Civil Informática</MenuItemOption>
+      <MenuItemOption color="black" value="option2">Ingeniería Civil Electrónica</MenuItemOption>
+      <MenuItemOption color="black" value="option3">Ingeniería Civil</MenuItemOption>
+    </MenuOptionGroup>
+  </MenuList>
+</Menu>
             </TabPanel>
 
         </TabPanels>
