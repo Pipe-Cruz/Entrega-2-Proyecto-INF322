@@ -94,9 +94,11 @@ export default function Home() {
   </MenuButton>
   <MenuList minWidth="240px" color="black">
     <MenuOptionGroup  color="black" title="Carreras" type="checkbox">
-      <MenuItemOption color="black" value="option1">Ingeniería Civil Informática</MenuItemOption>
-      <MenuItemOption color="black" value="option2">Ingeniería Civil Electrónica</MenuItemOption>
+      <MenuItemOption color="black" value="option3">Arquitectura</MenuItemOption>
       <MenuItemOption color="black" value="option3">Ingeniería Civil</MenuItemOption>
+      <MenuItemOption color="black" value="option3">Ingeniería Civil Ambiental</MenuItemOption>
+      <MenuItemOption color="black" value="option2">Ingeniería Civil Electrónica</MenuItemOption>
+      <MenuItemOption color="black" value="option1">Ingeniería Civil Informática</MenuItemOption>    
     </MenuOptionGroup>
   </MenuList>
 </Menu>
