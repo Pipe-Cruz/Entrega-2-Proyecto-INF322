@@ -38,24 +38,37 @@ export default function Home() {
     <Tr>
       <Th>Carrera</Th>
       <Th>Estado</Th>
+      <Th></Th>
     </Tr>
   </Thead>
   <Tbody>
     <Tr>
       <Td>1. Ingeniería Civil Informática</Td>
       <Td>Aceptada</Td>
+      <Td>
+        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacioncancelada")}>Cancelar Postulacion</Button>
+      </Td>
     </Tr>
     <Tr>
       <Td>2. Ingeniería Civil Electrónica</Td>
       <Td>Rechazada</Td>
+      <Td>
+        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacioncancelada")}>Cancelar Postulacion</Button>
+      </Td>
     </Tr>
     <Tr>
       <Td>3. Ingeniería Civil Ambiental</Td>
       <Td>En Proceso</Td>
+      <Td>
+        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacioncancelada")}>Cancelar Postulacion</Button>
+      </Td>
     </Tr>
     <Tr>
       <Td>4. Arquitectura</Td>
       <Td>Cancelada</Td>
+      <Td>
+        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacioncancelada")}>Cancelar Postulacion</Button>
+      </Td>
     </Tr>
   </Tbody>
   <Tfoot>
@@ -65,7 +78,6 @@ export default function Home() {
       <br/>
       <Stack direction="row" spacing={4} align="center">
         <Button colorScheme="blue" size="md" onClick={() => router.push("postulacion")}>Volver a la pagina principal</Button>
-        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacioncancelada")}>Cancelar Postulacion</Button>
       </Stack>
 
         </Box>
