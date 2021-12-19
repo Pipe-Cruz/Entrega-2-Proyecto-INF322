@@ -1,13 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Box } from "@chakra-ui/react"
-import { Button, ButtonGroup } from "@chakra-ui/react"
-import { Input } from "@chakra-ui/react"
-import { Text } from "@chakra-ui/react"
-import { Stack } from "@chakra-ui/react"
 import { useRouter } from 'next/router'
 import {
+    Input,
     Table,
     Thead,
     Tbody,
@@ -16,6 +11,12 @@ import {
     Th,
     Td,
     TableCaption,
+    Image,
+    Stack,
+    Text,
+    Button,
+    ButtonGroup,
+    Box,
   } from "@chakra-ui/react"
 
 export default function Home() {
@@ -30,7 +31,21 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <Box bg="#319795" w="40%" p={4} color="white">
+      <Box bg='#319795' w='100%' p={2} color='white'>
+          <Stack spacing={4} direction='row' align='center'>
+            <Button colorScheme="#319795" size="md" onClick={() => router.push("http://localhost:3000")}>Inicio</Button>
+            <Button colorScheme="#319795" size="md" onClick={() => router.push("login")}>Iniciar sesión</Button>
+          </Stack>
+        </Box>
+        
+        <Image src='/utfsmlogo.png' alt='UTFSM' />
+        
+        <Image src='/portada.jpeg' alt='UTFSM' />
+
+        <Box bg='white' w='100%' p={4} color='white'/>
+
+
+        <Box bg="#319795" w="100%" p={4} color="white">
         <Text fontSize="2xl">Estado de postulación</Text>
 
         <Table variant="simple">
