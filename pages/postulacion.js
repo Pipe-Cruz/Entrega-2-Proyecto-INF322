@@ -80,11 +80,12 @@ export default function Home() {
             <p>Selecciona tus preferencias, puedes elegir hasta tres opciones.</p>
             <Text fontSize="2xl">Campus:</Text>
                 <Select bg="white" borderColor="white" color="black">
-                  <option value="option1">Campus Casa Central</option>
-                  <option value="option2">Sede Viña del Mar</option>
-                  <option value="option3">Campus Vitacura</option>
+                  <option value="option1">Campus Casa Central Valparaíso</option>
                   <option value="option3">Campus San Joaquín</option>
-                  <option value="option3">Campus Concepción</option>
+                  <option value="option3">Campus Vitacura</option>                 
+                  <option value="option3">Sede Concepción</option>
+                  <option value="option2">Sede Viña del Mar</option>
+                  <option value="option3">Campus Guayaquil</option>
                 </Select>
 
                 <Text fontSize="2xl">Carrera:</Text>
