@@ -92,7 +92,7 @@ export default function Home() {
 
       <br/>
       <Stack direction="row" spacing={4} align="center">
-        <Button colorScheme="blue" size="md" onClick={() => router.push("postulacion")}>Volver a la pagina principal</Button>
+        <Button colorScheme="blue" size="md" onClick={() => router.push("http://localhost:3000")}>Volver a la pagina principal</Button>
       </Stack>
 
         </Box>
